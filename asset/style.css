@@ -2,21 +2,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Grotesk:wght@300..700&display=swap');
 
 :root{
-    --MainColor:#13151d;
-    --MainLittleColor:#1f2330;
+    --MainColor:#121315;
+    --MainLittleColor:#151517;
     --secColor:rgb(0,0,0);
     --backgroundC:#181a23;  
     --backgroundC2:rgba(6, 182, 212, 1),;
     --backgroundC3:#a855f7;
-    --cardColor:#11131ad5;
+    --cardColor:#0d0d0fd5;
     --ButtonColor:#49117d;
     --TxtColor: rgb(255, 244, 244);
     --TxtColor2: #d3dcff;
     --HoverColor:#ffffffff;
-    --HoverBGColor:#e1e0e0;
-    --BoxShadow:#101218;
+    --HoverBGColor:#0e0e0e;
+    --HoverBGColor2:#1f1f22;
+    --BoxShadow:#08090c;
 }
-
+.sections article:hover{background-color: var(--HoverBGColor2);}
 
 *{font-family: "Inter", sans-serif;
 margin: 0%;}
@@ -34,7 +35,7 @@ header{
     
     background-color:var(--cardColor) ;
 
-    margin: 0%;
+    padding: 1%;
     
     color: var(--backColor);
     display: flex;
@@ -53,9 +54,10 @@ header nav ul li{
     
 }
 
-a:hover, button:hover{color:var(--backgroundC) ;
+a:hover, li:hover, button:hover{color:var(--HoverColor) ;
 background-color: var(--HoverBGColor);
 border-color: var(--HoverBGColor);
+border-radius: 1vh;
 }
 
 
@@ -78,10 +80,10 @@ main a, button{
     border-color:var(--backgroundC3) ;
     border-radius:1vh;
     padding: 1vh;
-    margin:2vh;
+    margin:1%;
 
 }
-p{margin:1%}
+p{margin-bottom:5%}
 main section{  display: inline-block;
   justify-content: space-between;}
 article{background-color: var(--MainLittleColor);
@@ -89,7 +91,12 @@ article{background-color: var(--MainLittleColor);
     display:inline-block;
 }
 
-footer ,footer nav , footer article{
+footer article nav{float: right;}
+
+footer ,footer nav , footer section article{
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 2%;
     margin-bottom: 0%;
     justify-content: space-between;
     background-color: var(--secColor);
@@ -98,9 +105,11 @@ footer ,footer nav , footer article{
 
 main video{float:right ;
     box-shadow: 5px 5px 5px 5px var(--BoxShadow);
-    border-radius: 1vh;
+    
 
 }
+
+video{border-radius: 1vh;}
 main{
 background-color:var(--MainColor);
 padding: 10%;
@@ -113,7 +122,7 @@ section {
 }
 
 .sections{text-align: center;}
-
+.sections article{height: 1;}
 section article{width: 10%;
 
 border-radius: 1vh;
@@ -122,16 +131,18 @@ justify-content: center ;
 text-align: left;
 margin: 1vh;
 }
-a{}
-img{}
 
-footer{bottom : 0%;}
+
+footer{bottom : 0%;
+margin-bottom: -1%;
+}
 
 #Scenter{text-align: center;}
 section{text-align: center;}
-footer p{text-align: center;}
+footer p{text-align: left;}
 
 .Part2 article{width: 35%;
+    height: 100%;
 }
 
 .selection video{
@@ -151,3 +162,59 @@ padding: 5%;
 margin:5%;
 text-align: left;}
 p{align-items: center;}
+
+
+.green{color: rgb(0, 255, 0);}
+
+.Part2 article button{float: right;}
+
+footer section{background-color: var(--secColor);
+}
+
+footer section article{width:100%;
+}
+footer section nav{display:flex;
+}
+
+footer section{display:flex;
+    justify-content: center;
+}
+
+footer section p{width: 40%;
+text-align: left;}
+
+footer p{text-align: center;
+margin-bottom: 0%;
+padding: 5%;
+}
+.sectionAside{text-align: left;padding: 5%;}
+
+#introSection{background-color: var(--MainColor);
+width: 40%;
+text-align: left;
+}
+
+.who{width: 50%;}
+.who article{display: inline-block ;
+    width:100%}
+img{padding: 1%;
+    margin: 1%;}
+.leftSide{width: 60% ;display: inline-block}
+
+.rightSide{float: right;
+display: inline-block;
+margin-bottom: 30%;
+border-radius: 1vh;
+width: 40%;
+background-color: var(--cardColor);
+text-align: center;
+
+
+}
+.rightSide article{width: 100%;
+
+}
+.rightSide article h3{margin: auto;}
+.sectionAside{display: flex;}
+
+main p {width: 40%;}
