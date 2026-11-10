@@ -317,6 +317,8 @@ form label{
     text-align: center;
     width: 100%;
 }
+
+.who{display: flex;width: 100%;}
 @media screen and (max-width: 767px) {
     main{padding:5%}
 footer section {
@@ -400,6 +402,8 @@ article p{text-align: left;}
 .sectionAside{text-align: center;width: 100%;}
 
 main video {margin-bottom: 10%;}
+
+.who{display: block;width: 100%;}
 }
 
 
