@@ -1,12 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=
-    , initial-scale=1.0">
-    <title>Contact/devis</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+    <link rel="stylesheet" href="asset/style.css">
 </head>
 <body>
-    
+
+   <header>
+        <div class="intro"><a href="/index.html"><h2>MEGATIMES STUDIO</h2></a>
+        <i>Win by timing</i></div>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Acceuil & Projets</a></li>
+                <li><a href="/Blender.html">Blender</a></li>
+                <li><a href="/Unreal.html">Unreal</a></li>
+                <li><a href="/Contact-Devis.html">Contact & Devis</a></li>
+            </ul>
+        </nav>
+        <button><a href="/Contact-Devis.html">Faire un Devis</a></button>
+    </header>
+
+    <main class="container">
+        <section class="page-header">
+            <h1>Créons votre jeu ensemble</h1>
+            <p>Remplissez le formulaire ci-dessous pour concrétiser votre projet.</p>
+        </section>
+
+        <form class="client-form">
+            <div class="form-group">
+                <label for="name">Votre Nom</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Adresse Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="project-type">Type de projet</label>
+                <select id="project-type" name="project-type">
+                    <option value="jeu-2d">Jeu 2D</option>
+                    <option value="jeu-3d">Jeu 3D (Unreal Engine / Autre)</option>
+                    <option value="autre">Autre service</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Décrivez votre projet</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Envoyer la demande</button>
+        </form>
+    </main>
+    <footer>
+        <section>
+        <h2>Megatimes Studio</h2>
+        <p>Studio indépendant de 2 créateurs passionnés. Alliance d'un Superviseur 3D / Blender et d'un Technical Director / Unreal Engine pour des pipelines VFX, cinématiques et rendus temps réel haute fidélité.</p>
+        <nav>
+            <article>
+                <ul>
+                    <li><a href="/index.html">Acceuil & Projets</a></li>
+                    <li><a href="/Blender.html">Blender</a></li>
+                    <li><a href="/Unreal.html">Unreal</a></li>
+                    <li><a href="/Contact-Devis.html">Contact & Devis</a></li>
+                </ul>
+            </article>
+            <article>
+                <i>Pôles Techniques</i>
+                <ul>
+                    <li>Direction 3D & Sculpting (Blender)</li>
+                    <li>TD Realtime & Lighting (Unreal Engine 5)</li>
+                </ul>
+            </article>
+        </nav>
+        </section>
+    <p>© 2024 Megatimes Studio. Studio indépendant de 2 créateurs. Tous droits réservés.</p>
+    </footer>
+
 </body>
 </html>
