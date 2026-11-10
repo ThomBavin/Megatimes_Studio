@@ -6,7 +6,7 @@
     --MainLittleColor:#151517;
     --secColor:rgb(0,0,0);
     --backgroundC:#181a23;  
-    --backgroundC2:rgba(6, 182, 212, 1),;
+    --backgroundC2:rgb(6, 182, 212);
     --backgroundC3:#a855f7;
     --cardColor:#0d0d0fd5;
     --ButtonColor:#49117d;
@@ -17,6 +17,8 @@
     --HoverBGColor2:#1f1f22;
     --BoxShadow:#08090c;
 }
+
+
 .sections article:hover{background-color: var(--HoverBGColor2);}
 
 *{font-family: "Inter", sans-serif;
@@ -94,8 +96,8 @@ article{background-color: var(--MainLittleColor);
 footer article nav{float: right;}
 
 footer ,footer nav , footer section article{
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 3%;
+    padding-right: 3%;
     padding-top: 2%;
     margin-bottom: 0%;
     justify-content: space-between;
@@ -103,12 +105,21 @@ footer ,footer nav , footer section article{
     bottom: 0%;
 }
 
-main video{float:right ;
-    box-shadow: 5px 5px 5px 5px var(--BoxShadow);
-    
-
+main {
+  background-color: var(--MainColor);
+  overflow: hidden;
+  margin-bottom: 0;}
+main section, section {
+  margin-top: 0;
+  background-color: var(--MainColor);
 }
 
+main video{float:right ;
+    box-shadow: 5px 5px 5px 5px var(--BoxShadow);
+    border-radius: 1vh;
+
+}
+video .sameLine{border-radius: 1vh;}
 video{border-radius: 1vh;}
 main{
 background-color:var(--MainColor);
@@ -119,7 +130,7 @@ section {
     
     background-color: var(--MainColor);
     display: inline-block;
-}
+}   
 
 .sections{text-align: center;}
 .sections article{height: 1;}
@@ -153,7 +164,7 @@ footer p{text-align: left;}
 img{color: var(--TxtColor);}
 
 .sameLine{float:right;
-    border-radius: 10vh;
+    border-radius: 1vh;
     padding: 5% ;
 }
 
@@ -161,10 +172,10 @@ img{color: var(--TxtColor);}
 padding: 5%;
 margin:5%;
 text-align: left;}
-p{align-items: center;}
 
 
-.green{color: rgb(0, 255, 0);}
+
+.blue{color: var(--backgroundC2);}
 
 .Part2 article button{float: right;}
 
@@ -190,7 +201,7 @@ padding: 5%;
 .sectionAside{text-align: left;padding: 5%;}
 
 #introSection{background-color: var(--MainColor);
-width: 40%;
+width: 100%;
 text-align: left;
 }
 
@@ -306,3 +317,94 @@ form label{
     text-align: center;
     width: 100%;
 }
+@media screen and (max-width: 767px) {
+    main{padding:5%}
+footer section {
+    display: inline-block;
+}
+footer {
+    display: inline-block;
+}
+footer section nav {
+    display: inline-block;
+}
+footer p{width: 100%;}
+section article{width: 35%;}
+h2{margin: 5%;}
+.rightSide{float:left;
+    display: inline-block;
+    width:100%;
+    margin:auto;
+    padding: auto;
+}
+.leftSide{float:left;
+    display: inline-block;
+    width:100%
+}
+main{display: block;
+  justify-content: space-between;
+
+}
+
+  main p {width: 90%;}
+  main h1 {width: 100%;}
+  main video{width: 100%;}
+
+  .sameLine video{height: 100%;}
+
+  video{width: 100%;
+}
+main p {padding:  1%;float: left;}
+main h1 {padding:  1%; float:left ;}
+
+footer section p {width: 100%;}
+
+.sectionAside{display: inline-block; width: 90%;}
+.sectionAside p,.sectionAside h2{display:block; width: 100%;}
+.sectionAside article{width: 100%;}
+main a,main button{display: block; text-align: center;}
+
+video{float:none}
+.who article{display: block;}
+
+p {
+text-align: left;
+}
+
+.Part2 article{width: 90%;text-align: center;}
+.Part2{text-align: center}
+.rightSide article{display: block;}
+
+b{display: block; width: 100%;
+text-align: center;}
+aside{display: block;}
+
+.leftSide, .introSection, .who{width: 90%; text-align: center; padding-left:1% ;}
+.imgP img{display: block; 
+    width: 100%;}
+
+nav{width: 90%;}
+footer p {margin: 0%;}
+
+main p, main h1, .leftSide ,.rightSide{float: none;}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+
+
+p{text-align: center;}
+
+article p{text-align: left;}
+.sectionAside{text-align: center;width: 100%;}
+
+main video {margin-bottom: 10%;}
+}
+
+
+main p{ text-align: left;} 
+main{padding: 5%;}
+h1{width: 50%;}
+
+.head{width: 100%;}
