@@ -218,3 +218,8 @@ text-align: center;
 .sectionAside{display: flex;}
 
 main p {width: 40%;}
+
+main section article{width: 100%;
+
+}
+main section article p{display: inline-block;}
